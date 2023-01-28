@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public bool isGrounded = false;
     float posX = 0.0f;
     Rigidbody2D rb;
+    
     void Start()
     {
         rb = transform.GetComponent<Rigidbody2D>();
@@ -73,6 +74,6 @@ public class Player : MonoBehaviour
     void GameOver()
     {
         GameObject.Find("GameController").GetComponent<GameController>().GameOver();
-
+        
     }
 }
